@@ -42,7 +42,10 @@ val dao: DAOFacade = DAOFacadeImpl().apply {
     runBlocking {
         if(allProducts().isEmpty())
         {
-            addNewProduct("jabłko", "Polska", 1.50)
+            addNewProduct("banan", "Afryka Zachodnia", 2.10)
+            addNewProduct("jabłko", "Polska", 1.80)
+            addNewProduct("okulary", "Chiny", 11.20)
+            addNewProduct("latarka", "Korea Południowa", 31.50)
         }
     }
 }
