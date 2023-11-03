@@ -1,1 +1,1 @@
-test info
+To jest folder z zadaniem drugim, aplikacja KTOR. Folder dao zawiera pliki obslugujace obiekty dao, sluzace do interakcji z baza danych. Folder models zawiera przykladowy model prduktow o 4 polach (id, name, country, price). W folderze plugins znajduje sie ProductRoutes, z odpowiednia tablica routingu. 
