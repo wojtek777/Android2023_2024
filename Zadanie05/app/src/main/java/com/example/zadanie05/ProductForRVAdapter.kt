@@ -27,9 +27,9 @@ class ProductForRVAdapter(val products: List<Product>) :
         }
         view.context.startActivity(intent)
 
-    //        view.findViewById<TextView>(R.id.productForRVName).text = "nic"
     }
 
+    // binding all possible products views
     override fun onBindViewHolder(holder: ProductForRVViewHolder, position: Int) {
         holder.itemView.findViewById<TextView>(R.id.productForRVName).text =
             products[position].name
@@ -37,7 +37,8 @@ class ProductForRVAdapter(val products: List<Product>) :
             openProductSite(it, products[position])
         }
     }
-
+	
+    //getter
     override fun getItemCount(): Int {
         return products.size
     }
